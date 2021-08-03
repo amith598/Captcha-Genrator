@@ -1,9 +1,11 @@
 #generate image captcha
 from captcha.image import ImageCaptcha
+from random import randint
+poll = randint(999, 9999)
 image = ImageCaptcha()
 
-image_data = image.generate('amith')
-image.write('amith', 'captcha.png')
+image_data = image.generate(poll)
+image.write(poll, 'captcha.png')
 
 #generate audio captcha
 from captcha.audio import AudioCaptcha
