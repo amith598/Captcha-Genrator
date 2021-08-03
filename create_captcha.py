@@ -2,8 +2,8 @@
 from captcha.image import ImageCaptcha
 image = ImageCaptcha()
 
-image_data = image.generate('jayant')
-image.write('jayant', 'captcha.png')
+image_data = image.generate('amith')
+image.write('amith', 'captcha.png')
 
 #generate audio captcha
 from captcha.audio import AudioCaptcha
